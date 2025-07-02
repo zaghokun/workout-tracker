@@ -1,0 +1,5 @@
+Penjelasan Package yang dipakai
+
+express: Ini adalah kerangka kerja (framework) utama kita. Express menyediakan banyak sekali fungsi siap pakai untuk membangun server, menangani URL, dan lain-lain. Tanpa Express, membuat server akan jauh lebih rumit.
+mongoose: Ini akan menjadi "jembatan" atau "penerjemah" antara aplikasi kita dengan database MongoDB. Mongoose membuat proses simpan, baca, dan hapus data ke MongoDB menjadi sangat mudah dari dalam kode JavaScript.
+dotenv: Ini adalah utilitas kecil yang sangat berguna untuk menjaga keamanan. Fungsinya untuk memuat variabel sensitif (seperti password database) dari sebuah file khusus agar tidak tercampur di dalam kode utama.

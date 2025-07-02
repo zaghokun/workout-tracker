@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Workout Tracker</h1>
+    <p>Catat kemajuan latihan Anda di sini!</p>
+
+    <form id="workout-form">
+      <h2>Tambah Latihan Baru</h2>
+      
+      <div class="form-group">
+        <label for="namaLatihan">Nama Latihan:</label>
+        <input type="text" id="namaLatihan" name="namaLatihan" placeholder="Contoh: Bench Press" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="set">Jumlah Set:</label>
+        <input type="number" id="set" name="set" placeholder="Contoh: 3" required>
+      </div>
+      
+      <!-- BAGIAN INI MEMASTIKAN 'name="repetisi"' SUDAH BENAR -->
+      <div class="form-group">
+        <label for="repetisi">Jumlah Repetisi:</label>
+        <input type="number" id="repetisi" name="repetisi" placeholder="Contoh: 10" required>
+      </div>
+
+      <div class="form-group">
+        <label for="beban">Beban (kg):</label>
+        <input type="number" id="beban" name="beban" placeholder="Contoh: 50">
+      </div>
+
+      <button type="submit" id="submit-button">Simpan Latihan</button>
+    </form>
+
+    <hr>
+
+    <h2>Riwayat Latihan</h2>
+    <div id="workout-list">
+      <p class="loading">Memuat data...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
